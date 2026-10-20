@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoSpace | Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="#" class="logo">
+            <span class="camera">📷</span>
+            <span>Photo<span class="blue">Space</span></span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">A LITTLE INSPIRATION EVERY DAY</p>
+            <h1>My Image <span>Gallery</span></h1>
+            <p>A collection of beautiful moments from nature, travel and more.</p>
+        </div>
+    </section>
+
+    <main class="container" id="gallery">
+
+        <div class="section-title">
+            <div>
+                <h2>Explore Photos</h2>
+                <p>Little moments, beautiful memories.</p>
+            </div>
+            <span class="photo-count" id="photoCount">8 photos</span>
+        </div>
+
+        <div class="toolbar">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="ocean">Ocean</button>
+                <button class="filter-btn" data-filter="forest">Forest</button>
+            </div>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search photos..."
+                aria-label="Search photos">
+        </div>
+
+        <div class="gallery">
+
+            <article class="gallery-item" data-category="mountains">
+                <button class="photo-button" aria-label="View Mountain Lake">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=85"
+                         alt="Mountain landscape">
+                </button>
+                <button class="favorite-btn" aria-label="Add Mountain Lake to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Mountain Lake</h3>
+                    <p>Mountains · Nature</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="ocean">
+                <button class="photo-button" aria-label="View Sunset Beach">
+                    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=85"
+                         alt="Warm evening sunlight over a landscape">
+                </button>
+                <button class="favorite-btn" aria-label="Add Sunset Beach to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Sunset Beach</h3>
+                    <p>Ocean · Sunset</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="forest">
+                <button class="photo-button" aria-label="View Forest Trail">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=85"
+                         alt="Sunlight passing through a green forest">
+                </button>
+                <button class="favorite-btn" aria-label="Add Forest Trail to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Forest Trail</h3>
+                    <p>Forest · Nature</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="mountains">
+                <button class="photo-button" aria-label="View Snowy Peaks">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=85"
+                         alt="Snow-covered mountain peaks">
+                </button>
+                <button class="favorite-btn" aria-label="Add Snowy Peaks to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Snowy Peaks</h3>
+                    <p>Mountains · Adventure</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="ocean">
+                <button class="photo-button" aria-label="View Coastal View">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=85"
+                         alt="Blue ocean water and waves">
+                </button>
+                <button class="favorite-btn" aria-label="Add Coastal View to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Coastal View</h3>
+                    <p>Ocean · Travel</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature">
+                <button class="photo-button" aria-label="View Flower Field">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85"
+                         alt="Colorful flowers in a field">
+                </button>
+                <button class="favorite-btn" aria-label="Add Flower Field to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Flower Field</h3>
+                    <p>Nature · Flowers</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="nature">
+                <button class="photo-button" aria-label="View Calm Lake">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85"
+                         alt="Calm lake surrounded by mountains">
+                </button>
+                <button class="favorite-btn" aria-label="Add Calm Lake to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Calm Lake</h3>
+                    <p>Nature · Peace</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="mountains">
+                <button class="photo-button" aria-label="View Rolling Hills">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=85"
+                         alt="Green rolling hills in the countryside">
+                </button>
+                <button class="favorite-btn" aria-label="Add Rolling Hills to favorites">♡</button>
+                <div class="photo-info">
+                    <h3>Rolling Hills</h3>
+                    <p>Mountains · Travel</p>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="empty-message" id="emptyMessage" hidden>
+            No photos found. Try another search.
+        </p>
+    </main>
+
+    <!-- Image lightbox -->
+    <div class="lightbox" id="lightbox"
+         role="dialog" aria-modal="true"
+         aria-label="Image viewer" aria-hidden="true">
+
+        <button class="close-btn" id="closeBtn"
+                aria-label="Close image viewer">&times;</button>
+
+        <button class="nav-btn prev-btn" id="prevBtn"
+                aria-label="Previous image">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="">
+            <div class="lightbox-info">
+                <div>
+                    <h3 id="lightboxTitle"></h3>
+                    <p id="imageCount"></p>
+                </div>
+                <a id="downloadBtn" class="download-btn"
+                   href="#" target="_blank" rel="noopener"
+                   aria-label="Open full image">↗</a>
+            </div>
+        </div>
+
+        <button class="nav-btn next-btn" id="nextBtn"
+                aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer id="about">
+        <p>Made with <span>♥</span> using HTML, CSS and JavaScript
+        </p>
+        <p class="footer-small">Learning through creativity and code.</p> 
+        <p class="footer-small">© Created by Raunak kumar
+
+        </p>
+    </footer>
+
+</body>
+</html>
